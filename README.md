@@ -1,4 +1,23 @@
-# docker-teste
+# docker-teste(Com Dockercompose)
+
+
+
+
+iniciar docker
+docker-compose up -d
+
+parar docker
+docker-compose stop 
+
+
+
+
+
+
+
+
+
+# docker-teste (Com Dockerfile)
 
 Baixar imagem do MySQL
 docker build -t mysql-image -f api/db/Dockerfile .
