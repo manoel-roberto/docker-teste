@@ -20,9 +20,22 @@ show databases;
 USE db_teste;
 select * from products;
 
-
+ALTER USER root IDENTIFIED WITH mysql_native_password BY 'senha123';
+flush privileges;
 
 Criação projeto node
 yarn init -y
 yarn add nodemon -D
 yarn express mysql
+
+
+Baixar imagem Node
+
+docker build -t node-image -f api/Dockerfile .
+
+criar container node
+
+docker run -d -v $(pwd)/api:/home/node/app -p 9001:9001 --link mysql-container --rm --name node-container node-image
+
+Acessar a api
+http://localhost:9001/products
