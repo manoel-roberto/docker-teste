@@ -39,3 +39,16 @@ docker run -d -v $(pwd)/api:/home/node/app -p 9001:9001 --link mysql-container -
 
 Acessar a api
 http://localhost:9001/products
+
+
+Baixar imagem php
+docker build -t php-image -f website/Dockerfile .
+
+Criação container
+docker run -d -v $(pwd)/website:/var/www/html -p 8888:80 --link node-container --rm --name php-container php-image
+
+
+http://localhost:8888/
+
+docker image ls 
+docker ps
