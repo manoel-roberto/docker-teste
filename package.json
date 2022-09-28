@@ -1,0 +1,18 @@
+{
+  "name": "docker-teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/manoel-roberto/docker-teste.git",
+  "author": "Manoel Roberto <manoelrobertoms@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/index"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+  }
+}
