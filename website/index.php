@@ -9,7 +9,7 @@
 </head>
 <body>
   <?php
-    $result = file_get_contents("http://node-container:9001/products");
+    $result = file_get_contents("http://node-contanier:9001/products");
     $products = json_decode($result);
   ?>
   <div class="container">
