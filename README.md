@@ -6,6 +6,18 @@
 iniciar docker
 docker-compose up -d
 
+recriar a pasta node_modules (local)
+Entra na pasta API e executa o comando yarn
+
+Criando no linux
+
+
+
+Rodar script para criar banco de dados/tabela e incerir dados de teste
+
+docker exec -i mysql-container mysql -uroot -psenha123 < api/db/script.sql
+
+
 parar docker
 docker-compose stop 
 
